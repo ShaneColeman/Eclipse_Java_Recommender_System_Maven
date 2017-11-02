@@ -5,4 +5,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>Recommender System LibRec Java Maven</name>
   <description>Java Maven project which utilises the LibRec Recommender System Library</description>
+  
+  <dependencies>
+  </dependencies>
 </project>
