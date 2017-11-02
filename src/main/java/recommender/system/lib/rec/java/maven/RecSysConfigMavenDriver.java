@@ -25,14 +25,14 @@ public class RecSysConfigMavenDriver
 	 * ItemKNNRecommender 
 	 */
 	//public static String CONFIGURATION_FILE = "conf/UserKNN-CF.properties";
-	public static String CONFIGURATION_FILE = "conf/ItemKNN-CF.properties";
+	//public static String CONFIGURATION_FILE = "conf/ItemKNN-CF.properties";
 	
 	/*
 	 * AbstractRecommender
 	 * Collaborative Filtering - Ranking
 	 * SLIMRecommender
 	 */
-	//public static String CONFIGURATION_FILE = "conf/SLIM-CF-Ranking.properties";
+	public static String CONFIGURATION_FILE = "conf/SLIM-CF-Ranking.properties";
 	
 	/*
 	 * AbstractRecommender
