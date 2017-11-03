@@ -32,7 +32,7 @@ public class RecSysConfigMavenDriver
 	 * Collaborative Filtering - Ranking
 	 * SLIMRecommender
 	 */
-	public static String CONFIGURATION_FILE = "conf/SLIM-CF-Ranking.properties";
+	//public static String CONFIGURATION_FILE = "conf/SLIM-CF-Ranking.properties";
 	
 	/*
 	 * AbstractRecommender
@@ -61,8 +61,10 @@ public class RecSysConfigMavenDriver
 	 * BiasedMFRecommender -> MatrixFactorizationRecommender
 	 * Collaborative Filtering - Rating
 	 * SVDPlusPlusRecommender
+	 * RBMRecommender
 	 */
 	//public static String CONFIGURATION_FILE = "conf/SVDPlusPlus-CF-Rating.properties";
+	public static String CONFIGURATION_FILE = "conf/RBM-CF-Rating.properties";
 	
 	public static void main(String[] args) throws Exception 
 	{
@@ -119,6 +121,10 @@ public class RecSysConfigMavenDriver
 		else if(configurationFilePath.equals("conf/SVDPlusPlus-CF-Rating.properties"))
 		{
 			System.out.println("SVD Plus Plus Recommender\n");
+		}
+		else if(configurationFilePath.equals("conf/RBM-CF-Rating.properties"))
+		{
+			System.out.println("RBM Recommender\n");
 		}
 		
 		Randoms.seed(20171025); 
