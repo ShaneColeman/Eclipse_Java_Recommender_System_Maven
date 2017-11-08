@@ -24,7 +24,7 @@ public class RecSysConfigMavenDriver
 	 * UserKNNRecommender
 	 * ItemKNNRecommender 
 	 */
-	//public static String CONFIGURATION_FILE = "conf/UserKNN-CF.properties";
+	public static String CONFIGURATION_FILE = "conf/UserKNN-CF.properties";
 	//public static String CONFIGURATION_FILE = "conf/ItemKNN-CF.properties";
 	
 	/*
@@ -64,7 +64,7 @@ public class RecSysConfigMavenDriver
 	 * RBMRecommender
 	 */
 	//public static String CONFIGURATION_FILE = "conf/SVDPlusPlus-CF-Rating.properties";
-	public static String CONFIGURATION_FILE = "conf/RBM-CF-Rating.properties";
+	//public static String CONFIGURATION_FILE = "conf/RBM-CF-Rating.properties";
 	
 	public static void main(String[] args) throws Exception 
 	{
