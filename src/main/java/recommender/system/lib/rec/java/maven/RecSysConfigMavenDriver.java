@@ -25,7 +25,7 @@ public class RecSysConfigMavenDriver
 	 * ItemKNNRecommender 
 	 */
 	//public static String CONFIGURATION_FILE = "conf/UserKNN-CF.properties";
-	//public static String CONFIGURATION_FILE = "conf/ItemKNN-CF.properties";
+	public static String CONFIGURATION_FILE = "conf/ItemKNN-CF.properties";
 	
 	/*
 	 * AbstractRecommender
@@ -73,7 +73,7 @@ public class RecSysConfigMavenDriver
 	 * FMSGDRecommender
 	 */
 	//public static String CONFIGURATION_FILE = "conf/FMALS-CF-Rating.properties";
-	public static String CONFIGURATION_FILE = "conf/FMSGD-CF-Rating.properties";
+	//public static String CONFIGURATION_FILE = "conf/FMSGD-CF-Rating.properties";
 	
 	/*
 	 * TensorRecommender
