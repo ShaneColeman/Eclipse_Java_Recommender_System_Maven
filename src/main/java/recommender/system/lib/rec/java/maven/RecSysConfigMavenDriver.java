@@ -25,7 +25,7 @@ public class RecSysConfigMavenDriver
 	 * ItemKNNRecommender 
 	 */
 	//public static String CONFIGURATION_FILE = "conf/UserKNN-CF.properties";
-	public static String CONFIGURATION_FILE = "conf/ItemKNN-CF.properties";
+	//public static String CONFIGURATION_FILE = "conf/ItemKNN-CF.properties";
 	
 	/*
 	 * AbstractRecommender
@@ -47,6 +47,13 @@ public class RecSysConfigMavenDriver
 	 * HybridRecommender
 	 */
 	//public static String CONFIGURATION_FILE = "conf/Hybrid.properties";
+	
+	/*
+	 * MatrixFactorizationRecommender 
+	 * Collaborative Filtering - Rating
+	 * BiasedMFRecommender
+	 */
+	public static String CONFIGURATION_FILE = "conf/BiasedMF-CF-Rating.properties";
 	
 	/*
 	 * MatrixFactorizationRecommender 
@@ -129,6 +136,10 @@ public class RecSysConfigMavenDriver
 		else if(configurationFilePath.equals("conf/Hybrid.properties"))
 		{
 			System.out.println("Hybrid Recommender\n");
+		}
+		else if(configurationFilePath.equals("conf/BiasedMF-CF-Rating.properties"))
+		{
+			System.out.println("Biased MF Recommender\n");
 		}
 		else if(configurationFilePath.equals("conf/AoBPR-CF-Ranking.properties"))
 		{
