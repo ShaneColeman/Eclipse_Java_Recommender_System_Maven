@@ -72,8 +72,17 @@ public class RecSysConfigMavenDriver
 	 * FMALSRecommender
 	 * FMSGDRecommender
 	 */
-	public static String CONFIGURATION_FILE = "conf/FMALS-CF-Rating.properties";
+	//public static String CONFIGURATION_FILE = "conf/FMALS-CF-Rating.properties";
 	//public static String CONFIGURATION_FILE = "conf/FMSGD-CF-Rating.properties";
+	
+	/*
+	 * TensorRecommender
+	 * Context - Rating
+	 * BPTFRecommender
+	 * PITFRecommender
+	 */
+	public static String CONFIGURATION_FILE = "conf/BPTF-Context-Rating.properties";
+	//public static String CONFIGURATION_FILE = "conf/PITF-Context-Rating.properties";
 	
 	public static void main(String[] args) throws Exception 
 	{
@@ -82,6 +91,8 @@ public class RecSysConfigMavenDriver
 		 * https://stackoverflow.com/questions/12532339/no-appenders-could-be-found-for-loggerlog4j
 		 */
 
+		System.out.println("Configuration File Path: " + CONFIGURATION_FILE.toString() + "\n");
+		
 		Configuration configuration = new Configuration();
 		String configurationFilePath = CONFIGURATION_FILE;
 		Properties properties = new Properties();
@@ -142,6 +153,14 @@ public class RecSysConfigMavenDriver
 		else if(configurationFilePath.equals("conf/FMSGD-CF-Rating.properties"))
 		{
 			System.out.println("FMSGD Recommender\n");
+		}
+		else if(configurationFilePath.equals("conf/BPTF-Context-Rating.properties"))
+		{
+			System.out.println("BPTF Recommender\n");
+		}
+		else if(configurationFilePath.equals("conf/PITF-Context-Rating.properties"))
+		{
+			System.out.println("PITF Recommender\n");
 		}
 		
 		Randoms.seed(20171025); 
