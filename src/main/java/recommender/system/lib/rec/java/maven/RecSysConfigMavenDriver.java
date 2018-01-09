@@ -12,6 +12,19 @@ public class RecSysConfigMavenDriver
 	/*
 	 * AbstractRecommender
 	 * Baseline
+	 * ConstantGuessRecommender
+	 * GlobalAverageRecommender
+	 * UserAverageRecommender
+	 * ItemAverageRecommender
+	 */
+	//public static String CONFIGURATION_FILE = "conf/ConstantGuess-Baseline.properties";
+	//public static String CONFIGURATION_FILE = "conf/GlobalAverage-Baseline.properties";
+	//public static String CONFIGURATION_FILE = "conf/UserAverage-Baseline.properties";
+	public static String CONFIGURATION_FILE = "conf/ItemAverage-Baseline.properties";
+	
+	/*
+	 * ProbabilisticGraphicalRecommender
+	 * Baseline
 	 * UserClusterRecommender
 	 * ItemClusterRecommender
 	 */
@@ -56,7 +69,7 @@ public class RecSysConfigMavenDriver
 	 * RBMRecommender
 	 */
 	//public static String CONFIGURATION_FILE = "conf/BiasedMF-CF-Rating.properties";
-	public static String CONFIGURATION_FILE = "conf/NMF-CF-Rating.properties";
+	//public static String CONFIGURATION_FILE = "conf/NMF-CF-Rating.properties";
 	//public static String CONFIGURATION_FILE = "conf/RBM-CF-Rating.properties";
 	
 	/*
@@ -111,7 +124,23 @@ public class RecSysConfigMavenDriver
 			configuration.set(name, properties.getProperty(name));
 		}
 		
-		if(configurationFilePath.equals("conf/UserCluster-Baseline.properties"))
+		if(configurationFilePath.equals("conf/ConstantGuess-Baseline.properties"))
+		{
+			System.out.println("Constant Guess Recommender\n");
+		}
+		else if(configurationFilePath.equals("conf/GlobalAverage-Baseline.properties"))
+		{
+			System.out.println("Global Average Recommender\n");
+		}
+		else if(configurationFilePath.equals("conf/UserAverage-Baseline.properties"))
+		{
+			System.out.println("User Average Recommender\n");
+		}
+		else if(configurationFilePath.equals("conf/ItemAverage-Baseline.properties"))
+		{
+			System.out.println("Item Average Recommender\n");
+		}
+		else if(configurationFilePath.equals("conf/UserCluster-Baseline.properties"))
 		{
 			System.out.println("User Cluster Recommender\n");
 		}
