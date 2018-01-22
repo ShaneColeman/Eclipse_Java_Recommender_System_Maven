@@ -37,7 +37,7 @@ public class RecSysConfigMavenDriver
 	 * UserKNNRecommender
 	 * ItemKNNRecommender 
 	 */
-	//public static String CONFIGURATION_FILE = "conf/UserKNN-CF.properties";
+	public static String CONFIGURATION_FILE = "conf/UserKNN-CF.properties";
 	//public static String CONFIGURATION_FILE = "conf/ItemKNN-CF.properties";
 	
 	/*
@@ -70,7 +70,7 @@ public class RecSysConfigMavenDriver
 	 */
 	//public static String CONFIGURATION_FILE = "conf/BiasedMF-CF-Rating.properties";
 	//public static String CONFIGURATION_FILE = "conf/NMF-CF-Rating.properties";
-	public static String CONFIGURATION_FILE = "conf/RBM-CF-Rating.properties";
+	//public static String CONFIGURATION_FILE = "conf/RBM-CF-Rating.properties";
 	
 	/*
 	 * MatrixFactorizationRecommender 
