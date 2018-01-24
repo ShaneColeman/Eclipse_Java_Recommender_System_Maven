@@ -14,11 +14,13 @@ public class RecSysConfigMavenDriver
 	 * Baseline
 	 * ConstantGuessRecommender
 	 * GlobalAverageRecommender
+	 * MostPopularRecommender
 	 * UserAverageRecommender
 	 * ItemAverageRecommender
 	 */
 	//public static String CONFIGURATION_FILE = "conf/ConstantGuess-Baseline.properties";
 	//public static String CONFIGURATION_FILE = "conf/GlobalAverage-Baseline.properties";
+	//public static String CONFIGURATION_FILE = "conf/MostPopular-Baseline.properties";
 	//public static String CONFIGURATION_FILE = "conf/UserAverage-Baseline.properties";
 	//public static String CONFIGURATION_FILE = "conf/ItemAverage-Baseline.properties";
 	
@@ -37,8 +39,8 @@ public class RecSysConfigMavenDriver
 	 * UserKNNRecommender
 	 * ItemKNNRecommender 
 	 */
-	public static String CONFIGURATION_FILE = "conf/UserKNN-CF.properties";
-	//public static String CONFIGURATION_FILE = "conf/ItemKNN-CF.properties";
+	//public static String CONFIGURATION_FILE = "conf/UserKNN-CF.properties";
+	public static String CONFIGURATION_FILE = "conf/ItemKNN-CF.properties";
 	
 	/*
 	 * AbstractRecommender
@@ -131,6 +133,10 @@ public class RecSysConfigMavenDriver
 		else if(configurationFilePath.equals("conf/GlobalAverage-Baseline.properties"))
 		{
 			System.out.println("Global Average Recommender\n");
+		}
+		else if(configurationFilePath.equals("conf/MostPopular-Baseline.properties"))
+		{
+			System.out.println("Most Popular Recommender\n");
 		}
 		else if(configurationFilePath.equals("conf/UserAverage-Baseline.properties"))
 		{
