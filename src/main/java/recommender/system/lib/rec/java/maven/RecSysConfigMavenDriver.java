@@ -20,7 +20,7 @@ public class RecSysConfigMavenDriver
 	 */
 	//public static String CONFIGURATION_FILE = "conf/ConstantGuess-Baseline.properties";
 	//public static String CONFIGURATION_FILE = "conf/GlobalAverage-Baseline.properties";
-	//public static String CONFIGURATION_FILE = "conf/MostPopular-Baseline.properties";
+	public static String CONFIGURATION_FILE = "conf/MostPopular-Baseline.properties";
 	//public static String CONFIGURATION_FILE = "conf/UserAverage-Baseline.properties";
 	//public static String CONFIGURATION_FILE = "conf/ItemAverage-Baseline.properties";
 	
@@ -40,7 +40,7 @@ public class RecSysConfigMavenDriver
 	 * ItemKNNRecommender 
 	 */
 	//public static String CONFIGURATION_FILE = "conf/UserKNN-CF.properties";
-	public static String CONFIGURATION_FILE = "conf/ItemKNN-CF.properties";
+	//public static String CONFIGURATION_FILE = "conf/ItemKNN-CF.properties";
 	
 	/*
 	 * AbstractRecommender
