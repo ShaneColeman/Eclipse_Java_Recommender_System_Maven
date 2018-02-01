@@ -39,8 +39,8 @@ public class RecSysConfigMavenDriver
 	 * UserKNNRecommender
 	 * ItemKNNRecommender 
 	 */
-	public static String CONFIGURATION_FILE = "conf/UserKNN-CF.properties";
-	//public static String CONFIGURATION_FILE = "conf/ItemKNN-CF.properties";
+	//public static String CONFIGURATION_FILE = "conf/UserKNN-CF.properties";
+	public static String CONFIGURATION_FILE = "conf/ItemKNN-CF.properties";
 	
 	/*
 	 * AbstractRecommender
