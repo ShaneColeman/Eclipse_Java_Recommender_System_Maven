@@ -53,8 +53,10 @@ public class RecSysConfigMavenDriver
 	 * AbstractRecommender
 	 * EXT
 	 * AssociationRuleRecommender
+	 * PersonalityDiagnosisRecommender
 	 */
 	//public static String CONFIGURATION_FILE = "conf/AssociationRule-EXT.properties";
+	//public static String CONFIGURATION_FILE = "conf/PersonalityDiagnosis-EXT.properties";
 	
 	/*
 	 * AbstractRecommender
@@ -83,7 +85,7 @@ public class RecSysConfigMavenDriver
 	 */
 	//public static String CONFIGURATION_FILE = "conf/AoBPR-CF-Ranking.properties";
 	//public static String CONFIGURATION_FILE = "conf/RankALS-CF-Ranking.properties";
-	public static String CONFIGURATION_FILE = "conf/WRMF-CF-Ranking.properties";
+	//public static String CONFIGURATION_FILE = "conf/WRMF-CF-Ranking.properties";
 	
 	/*
 	 * BiasedMFRecommender -> MatrixFactorizationRecommender
@@ -91,6 +93,13 @@ public class RecSysConfigMavenDriver
 	 * SVDPlusPlusRecommender
 	 */
 	//public static String CONFIGURATION_FILE = "conf/SVDPlusPlus-CF-Rating.properties";
+	
+	/*
+	 * ProbabilisticGraphicalRecommender
+	 * Collaborative Filtering - Ranking
+	 * PLSARecommender
+	 */
+	public static String CONFIGURATION_FILE = "conf/PLSA-CF-Ranking.properties";
 	
 	/*
 	 * FactorizationMachineRecommender
@@ -172,6 +181,10 @@ public class RecSysConfigMavenDriver
 		{
 			System.out.println("Association Rule Recommender\n");
 		}
+		else if(configurationFilePath.equals("conf/PersonalityDiagnosis-EXT.properties"))
+		{
+			System.out.println("Personality Diagnosis Recommender\n");
+		}
 		else if(configurationFilePath.equals("conf/Hybrid.properties"))
 		{
 			System.out.println("Hybrid Recommender\n");
@@ -203,6 +216,10 @@ public class RecSysConfigMavenDriver
 		else if(configurationFilePath.equals("conf/SVDPlusPlus-CF-Rating.properties"))
 		{
 			System.out.println("SVD Plus Plus Recommender\n");
+		}
+		else if(configurationFilePath.equals("conf/PLSA-CF-Ranking.properties"))
+		{
+			System.out.println("PLSA Recommender\n");
 		}
 		else if(configurationFilePath.equals("conf/FMALS-CF-Rating.properties"))
 		{
