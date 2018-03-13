@@ -40,7 +40,7 @@ public class RecSysConfigMavenDriver
 	 * ItemKNNRecommender 
 	 */
 	//public static String CONFIGURATION_FILE = "conf/UserKNN-CF.properties";
-	public static String CONFIGURATION_FILE = "conf/ItemKNN-CF.properties";
+	//public static String CONFIGURATION_FILE = "conf/ItemKNN-CF.properties";
 	
 	/*
 	 * AbstractRecommender
@@ -79,9 +79,11 @@ public class RecSysConfigMavenDriver
 	 * Collaborative Filtering - Ranking
 	 * AoBPRRecommender
 	 * RankALSRecommender
+	 * WRMFRecommender
 	 */
 	//public static String CONFIGURATION_FILE = "conf/AoBPR-CF-Ranking.properties";
 	//public static String CONFIGURATION_FILE = "conf/RankALS-CF-Ranking.properties";
+	public static String CONFIGURATION_FILE = "conf/WRMF-CF-Ranking.properties";
 	
 	/*
 	 * BiasedMFRecommender -> MatrixFactorizationRecommender
@@ -194,6 +196,10 @@ public class RecSysConfigMavenDriver
 		{
 			System.out.println("Rank ALS Recommender\n");
 		}
+		else if(configurationFilePath.equals("conf/WRMF-CF-Ranking.properties"))
+		{
+			System.out.println("WRMF Recommender\n");
+		}
 		else if(configurationFilePath.equals("conf/SVDPlusPlus-CF-Rating.properties"))
 		{
 			System.out.println("SVD Plus Plus Recommender\n");
@@ -223,13 +229,12 @@ public class RecSysConfigMavenDriver
 
 		System.out.println("Data Model Class: " + job.getDataModelClass());
 		System.out.println("Recommender Class: " + job.getRecommenderClass());
-		System.out.println("Similarity Class: " + job.getSimilarityClass());
-		System.out.println("Filter Class: " + job.getFilterClass());
-		
 		
 		if(configurationFilePath.equals("conf/UserKNN-CF.properties") || configurationFilePath.equals("conf/ItemKNN-CF.properties"))
 		{
 			System.out.println("Number of KNN Neighbours: " + configuration.get("rec.neighbors.knn.number"));
+			System.out.println("Similarity Class: " + job.getSimilarityClass());
+			System.out.println("Filter Class: " + job.getFilterClass());
 			
 			if(configuration.get("rec.recommender.isranking").equals("true"))
 				System.out.println("Number of Top-Ns (Ranking): " + configuration.get("rec.recommender.ranking.topn"));
