@@ -34,13 +34,22 @@ public class RecSysConfigMavenDriver
 	//public static String CONFIGURATION_FILE = "conf/ItemCluster-Baseline.properties";
 	
 	/*
+	 * ProbabilisticGraphicalRecommender
+	 * Collaborative Filtering
+	 * BHFreeRecommender
+	 * BUCMRecommender
+	 */
+	//public static String CONFIGURATION_FILE = "conf/BHFree-CF.properties";
+	//public static String CONFIGURATION_FILE = "conf/BUCM-CF.properties";
+	
+	/*
 	 * AbstractRecommender
 	 * Collaborative Filtering 
 	 * UserKNNRecommender
 	 * ItemKNNRecommender 
 	 */
 	//public static String CONFIGURATION_FILE = "conf/UserKNN-CF.properties";
-	//public static String CONFIGURATION_FILE = "conf/ItemKNN-CF.properties";
+	public static String CONFIGURATION_FILE = "conf/ItemKNN-CF.properties";
 	
 	/*
 	 * AbstractRecommender
@@ -54,9 +63,18 @@ public class RecSysConfigMavenDriver
 	 * EXT
 	 * AssociationRuleRecommender
 	 * PersonalityDiagnosisRecommender
+	 * SlopeOneRecommender
 	 */
 	//public static String CONFIGURATION_FILE = "conf/AssociationRule-EXT.properties";
 	//public static String CONFIGURATION_FILE = "conf/PersonalityDiagnosis-EXT.properties";
+	//public static String CONFIGURATION_FILE = "conf/SlopeOne-EXT.properties";
+	
+	/*
+	 * RankSGDRecommender -> MatrixFactorizationRecommender
+	 * EXT
+	 * PRankDRecommender
+	 */
+	//public static String CONFIGURATION_FILE = "conf/PRankD-EXT.properties";
 	
 	/*
 	 * AbstractRecommender
@@ -80,11 +98,29 @@ public class RecSysConfigMavenDriver
 	 * MatrixFactorizationRecommender 
 	 * Collaborative Filtering - Ranking
 	 * AoBPRRecommender
+	 * BPRRecommender
+	 * CLIMFRecommender
+	 * EALSRecommender
+	 * FISMaucRecommender
+	 * FISMrmseRecommender
+	 * GBPRRecommender
+	 * ListRankMFRecommender
 	 * RankALSRecommender
+	 * RankSGDRecommender
+	 * WBPRRecommender
 	 * WRMFRecommender
 	 */
 	//public static String CONFIGURATION_FILE = "conf/AoBPR-CF-Ranking.properties";
+	//public static String CONFIGURATION_FILE = "conf/BPR-CF-Ranking.properties";
+	//public static String CONFIGURATION_FILE = "conf/CLIMF-CF-Ranking.properties";
+	//public static String CONFIGURATION_FILE = "conf/EALS-CF-Ranking.properties";
+	//public static String CONFIGURATION_FILE = "conf/FISMauc-CF-Ranking.properties";
+	//public static String CONFIGURATION_FILE = "conf/FISMrmse-CF-Ranking.properties";
+	//public static String CONFIGURATION_FILE = "conf/GBPR-CF-Ranking.properties";
+	//public static String CONFIGURATION_FILE = "conf/ListRankMF-CF-Ranking.properties";
 	//public static String CONFIGURATION_FILE = "conf/RankALS-CF-Ranking.properties";
+	//public static String CONFIGURATION_FILE = "conf/RankSGD-CF-Ranking.properties";
+	//public static String CONFIGURATION_FILE = "conf/WBPR-CF-Ranking.properties";
 	//public static String CONFIGURATION_FILE = "conf/WRMF-CF-Ranking.properties";
 	
 	/*
@@ -97,9 +133,15 @@ public class RecSysConfigMavenDriver
 	/*
 	 * ProbabilisticGraphicalRecommender
 	 * Collaborative Filtering - Ranking
+	 * AspectModelRankingRecommender
+	 * ItemBigramRecommender
+	 * LDARecommender
 	 * PLSARecommender
 	 */
-	public static String CONFIGURATION_FILE = "conf/PLSA-CF-Ranking.properties";
+	//public static String CONFIGURATION_FILE = "conf/AspectModelRanking-CF-Ranking.properties";
+	//public static String CONFIGURATION_FILE = "conf/ItemBigram-CF-Ranking.properties";
+	//public static String CONFIGURATION_FILE = "conf/LDA-CF-Ranking.properties";
+	//public static String CONFIGURATION_FILE = "conf/PLSA-CF-Ranking.properties";
 	
 	/*
 	 * FactorizationMachineRecommender
@@ -165,6 +207,14 @@ public class RecSysConfigMavenDriver
 		{
 			System.out.println("Item Cluster Recommender\n");
 		}
+		else if(configurationFilePath.equals("conf/BHFree-CF.properties"))
+		{
+			System.out.println("BHFree Recommender\n");
+		}
+		else if(configurationFilePath.equals("conf/BUCM-CF.properties"))
+		{
+			System.out.println("BUCM Recommender\n");
+		}
 		else if(configurationFilePath.equals("conf/UserKNN-CF.properties"))
 		{
 			System.out.println("User KNN Recommender\n");
@@ -184,6 +234,14 @@ public class RecSysConfigMavenDriver
 		else if(configurationFilePath.equals("conf/PersonalityDiagnosis-EXT.properties"))
 		{
 			System.out.println("Personality Diagnosis Recommender\n");
+		}
+		else if(configurationFilePath.equals("conf/SlopeOne-EXT.properties"))
+		{
+			System.out.println("SlopeOne Recommender\n");
+		}
+		else if(configurationFilePath.equals("conf/PRankD-EXT.properties"))
+		{
+			System.out.println("PRankD Recommender\n");
 		}
 		else if(configurationFilePath.equals("conf/Hybrid.properties"))
 		{
@@ -205,9 +263,45 @@ public class RecSysConfigMavenDriver
 		{
 			System.out.println("AoBPR Recommender\n");
 		}
+		else if(configurationFilePath.equals("conf/BPR-CF-Ranking.properties"))
+		{
+			System.out.println("BPR Recommender\n");
+		}
+		else if(configurationFilePath.equals("conf/CLIMF-CF-Ranking.properties"))
+		{
+			System.out.println("CLIMF Recommender\n");
+		}
+		else if(configurationFilePath.equals("conf/EALS-CF-Ranking.properties"))
+		{
+			System.out.println("EALS Recommender\n");
+		}
+		else if(configurationFilePath.equals("conf/FISMauc-CF-Ranking.properties"))
+		{
+			System.out.println("FISMauc Recommender\n");
+		}
+		else if(configurationFilePath.equals("conf/FISMrmse-CF-Ranking.properties"))
+		{
+			System.out.println("FISMrmse Recommender\n");
+		}
+		else if(configurationFilePath.equals("conf/GBPR-CF-Ranking.properties"))
+		{
+			System.out.println("GBPR Recommender\n");
+		}
+		else if(configurationFilePath.equals("conf/ListRankMF-CF-Ranking.properties"))
+		{
+			System.out.println("ListRankMF Recommender\n");
+		}
 		else if(configurationFilePath.equals("conf/RankALS-CF-Ranking.properties"))
 		{
 			System.out.println("Rank ALS Recommender\n");
+		}
+		else if(configurationFilePath.equals("conf/RankSGD-CF-Ranking.properties"))
+		{
+			System.out.println("Rank SGD Recommender\n");
+		}
+		else if(configurationFilePath.equals("conf/WBPR-CF-Ranking.properties"))
+		{
+			System.out.println("WBPR Recommender\n");
 		}
 		else if(configurationFilePath.equals("conf/WRMF-CF-Ranking.properties"))
 		{
@@ -216,6 +310,18 @@ public class RecSysConfigMavenDriver
 		else if(configurationFilePath.equals("conf/SVDPlusPlus-CF-Rating.properties"))
 		{
 			System.out.println("SVD Plus Plus Recommender\n");
+		}
+		else if(configurationFilePath.equals("conf/AspectModelRanking-CF-Ranking.properties"))
+		{
+			System.out.println("AspectModelRanking Recommender\n");
+		}
+		else if(configurationFilePath.equals("conf/ItemBigram-CF-Ranking.properties"))
+		{
+			System.out.println("ItemBigram Recommender\n");
+		}
+		else if(configurationFilePath.equals("conf/LDA-CF-Ranking.properties"))
+		{
+			System.out.println("LDA Recommender\n");
 		}
 		else if(configurationFilePath.equals("conf/PLSA-CF-Ranking.properties"))
 		{
