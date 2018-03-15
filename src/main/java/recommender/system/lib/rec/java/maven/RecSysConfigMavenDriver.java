@@ -5,7 +5,7 @@ import java.util.Properties;
 
 import net.librec.conf.Configuration;
 import net.librec.job.RecommenderJob;
-import net.librec.math.algorithm.Randoms;
+//import net.librec.math.algorithm.Randoms;
 
 public class RecSysConfigMavenDriver 
 {
@@ -344,7 +344,7 @@ public class RecSysConfigMavenDriver
 			System.out.println("PITF Recommender\n");
 		}
 		
-		Randoms.seed(20171025); 
+		//Randoms.seed(20171025); 
 		RecommenderJob job = new RecommenderJob(configuration);
 		job.runJob();
 		
