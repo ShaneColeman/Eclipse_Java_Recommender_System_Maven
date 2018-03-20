@@ -56,7 +56,7 @@ public class RecSysConfigMavenDriver
 	 * Collaborative Filtering - Ranking
 	 * SLIMRecommender
 	 */
-	//public static String CONFIGURATION_FILE = "conf/SLIM-CF-Ranking.properties";
+	public static String CONFIGURATION_FILE = "conf/SLIM-CF-Ranking.properties";
 	
 	/*
 	 * AbstractRecommender
@@ -111,7 +111,7 @@ public class RecSysConfigMavenDriver
 	 * WRMFRecommender
 	 */
 	//public static String CONFIGURATION_FILE = "conf/AoBPR-CF-Ranking.properties";
-	public static String CONFIGURATION_FILE = "conf/BPR-CF-Ranking.properties";
+	//public static String CONFIGURATION_FILE = "conf/BPR-CF-Ranking.properties";
 	//public static String CONFIGURATION_FILE = "conf/CLIMF-CF-Ranking.properties";
 	//public static String CONFIGURATION_FILE = "conf/EALS-CF-Ranking.properties";
 	//public static String CONFIGURATION_FILE = "conf/FISMauc-CF-Ranking.properties";
