@@ -49,7 +49,7 @@ public class RecSysConfigMavenDriver
 	 * ItemKNNRecommender 
 	 */
 	//public static String CONFIGURATION_FILE = "conf/UserKNN-CF.properties";
-	//public static String CONFIGURATION_FILE = "conf/ItemKNN-CF.properties";
+	public static String CONFIGURATION_FILE = "conf/ItemKNN-CF.properties";
 	
 	/*
 	 * AbstractRecommender
@@ -114,7 +114,7 @@ public class RecSysConfigMavenDriver
 	//public static String CONFIGURATION_FILE = "conf/BPR-CF-Ranking.properties";
 	//public static String CONFIGURATION_FILE = "conf/CLIMF-CF-Ranking.properties";
 	//public static String CONFIGURATION_FILE = "conf/EALS-CF-Ranking.properties";
-	public static String CONFIGURATION_FILE = "conf/FISMauc-CF-Ranking.properties";
+	//public static String CONFIGURATION_FILE = "conf/FISMauc-CF-Ranking.properties";
 	//public static String CONFIGURATION_FILE = "conf/FISMrmse-CF-Ranking.properties";
 	//public static String CONFIGURATION_FILE = "conf/GBPR-CF-Ranking.properties";
 	//public static String CONFIGURATION_FILE = "conf/ListRankMF-CF-Ranking.properties";
